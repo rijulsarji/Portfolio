@@ -1,0 +1,82 @@
+.projectCardContainer {
+    position: relative;
+    height: 250px;
+    width: 500px;
+    background-color: transparent;
+}
+
+.projFront {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    transition: opacity 0.15s linear;
+    z-index: 1;
+    border-radius: 25px;
+}
+.projFront:hover {
+    opacity: 0;
+}
+.projImage {
+    width: 100%;
+    border-radius: 25px;
+}
+#card1 {
+    box-shadow: 0px 0px 10px #ffaa00;
+}
+#card2 {
+    box-shadow: 0px 0px 10px #ff0051;
+}
+#card3 {
+    box-shadow: 0px 0px 10px #00ffc3;
+}
+#card4 {
+    box-shadow: 0px 0px 10px #00ffea;
+}
+#card5 {
+    box-shadow: 0px 0px 10px #008cff;
+}
+#card6 {
+    box-shadow: 0px 0px 10px #ff7700;
+}
+#backcard1 {
+    background-color: #D5BB85;
+}
+#backcard2 {
+    background-color: #FFE1EB;
+}
+#backcard3 {
+    background-color: #A7F5E3;
+}
+#backcard4 {
+    background-color: #D3FFFB;
+}
+#backcard5 {
+    background-color: #C1E3FF;
+}
+#backcard6 {
+    background-color: #997C64;
+}
+
+.projBack {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: #5F9EA0;
+    border-radius: 25px;
+}
+
+@media screen and (max-width: 480px) {
+    .projectCardContainer {
+        width: 140px;
+        height: 70px;
+    }
+    .projFront {
+        border-radius: 8px;
+    }
+    .projImage {
+        border-radius: 8px;
+    }
+    .projBack {
+        border-radius: 8px;
+    }
+}

@@ -1,0 +1,171 @@
+body {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+.homeBody {
+  height: 100vh;
+  max-width: 100vw;
+  background-color: #EDF8FC;
+  user-select: none;
+  /* padding-left: 70px; */
+}
+
+/* Main View according to Figma */
+.mainContent {
+  width: 100%;
+}
+.mainView {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+}
+
+/* left side */
+.homeLeftSide {
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+  line-height: 0px;
+  margin-top: 24px;
+  margin-left: 72px;
+  position: absolute;
+  top: 0px;
+}
+.htmlTags {
+  color: #427283;
+  /* font-family: monospace; */
+  font-style: italic;
+  opacity: 0.35;
+  font-size: 15px;
+  font-weight: 600;
+}
+.heading, #desc, .contactMe {
+  color: #427283;
+}
+.heading {
+  font-size: 72px;
+  font-family: fantasy;
+}
+#desc {
+  font-size: 36px;
+}
+.contactDiv {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  border: 3px solid #588ea0;
+  border-radius: 15px;
+  height: 60px;
+  width: 160px;
+  cursor: pointer;
+  transition: all 0.15s linear;
+}
+.contactDiv:hover {
+  background-color: #427283;
+  color: #EDF8FC;
+}
+.contactDiv:hover .contactMe {
+  color: #EDF8FC;
+}
+.contactMe {
+  user-select: none;
+  font-size: 24px;
+  padding: 15px;
+  text-align: center;
+}
+
+
+.floatingIcons {
+  font-size: 64px;
+  animation-name: rotation;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  /* individual durations given below */
+  color: #427283;
+  position: absolute;
+}
+
+@keyframes rotation {
+  0% {transform:rotate(0deg);}
+  100% {transform: rotate(360deg);}
+}
+
+#html {
+  top: 25%;
+  right: 50%;
+  animation-duration: 18s;
+}
+#react  {
+  top: 15%;
+  right: 10%;
+  animation-duration: 17s;
+}
+#css {
+  top: 45%;
+  right: 5%;
+  animation-duration: 19s;
+}
+#js {
+  top: 50%;
+  right: 40%;
+  animation-duration: 21s;
+}
+#node {
+  top: 10%;
+  right: 35%;
+  animation-duration: 22s;
+}
+#figma {
+  top: 55%;
+  right: 25%;
+  animation-duration: 20s;
+}
+
+@media screen and (max-width: 480px) {
+  #waveline {
+    padding-top: 145px;
+  }
+  .homeLeftSide {
+    margin-left: 24px;
+  }
+  .htmlTags {
+    font-size: 12px;
+  }
+  .heading {
+    font-size: 56px;
+  }
+  #desc {
+    font-size: 18px;
+  }
+  .contactDiv {
+    height: 40px;
+    width: 120px;
+    border-radius: 10px;
+  }
+  .contactMe {
+    font-size: 16px;
+  }
+  #html {
+    top: 80%;
+    left: 10%;
+  }
+  #js {
+    top: 83%;
+    right: 35%;
+  }
+  #figma {
+    top: 65%;
+    right: 15%;
+  }
+  #node {
+    right: 38%;
+  }
+  #react {
+    top: 5%;
+  }
+  #css {
+    top: 25%;
+  }
+}
