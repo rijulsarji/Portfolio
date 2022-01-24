@@ -1,0 +1,30 @@
+.achiCardBody {
+    box-shadow: 0px 0px 10px #00072D;
+    border-radius: 15px;
+    width: 17%;
+    transition: box-shadow 0.15s linear;
+    user-select: none;
+    color: #0D5C63;
+    padding-bottom: 10px;
+}
+.achiCardBody:hover {
+    box-shadow: 0px 0px 15px #00072D;
+}
+.achiCardContainer {
+    padding: 20px;
+}
+.achiCardContainer h1 {
+    font-size: 24px;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 500;
+}
+.achiCardContainer p {
+    font-size: 18px;
+    font-family: 'Rubik', sans-serif;
+}
+
+@media screen and (max-width: 720px) {
+    .achiCardBody {
+        width: 70%;       
+    }
+}

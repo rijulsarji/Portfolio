@@ -4,10 +4,11 @@ body {
   box-sizing: border-box;
 }
 .homeBody {
-  height: 100vh;
+  height: 768px;
   max-width: 100vw;
   background-color: #EDF8FC;
   user-select: none;
+  /* padding-bottom: 25%;   */
   /* padding-left: 70px; */
 }
 
@@ -32,12 +33,12 @@ body {
   margin-left: 72px;
   position: absolute;
   top: 0px;
+  height: 100vh;
 }
 .htmlTags {
   color: #427283;
-  /* font-family: monospace; */
-  font-style: italic;
-  opacity: 0.35;
+  font-family: 'Damion', cursive;
+  opacity: 0.45;
   font-size: 15px;
   font-weight: 600;
 }
@@ -46,10 +47,11 @@ body {
 }
 .heading {
   font-size: 72px;
-  font-family: fantasy;
+  font-family: 'Fugaz One', cursive;
 }
 #desc {
   font-size: 36px;
+  font-family: 'Alata', sans-serif;
 }
 .contactDiv {
   margin-top: 20px;
@@ -58,7 +60,7 @@ body {
   border: 3px solid #588ea0;
   border-radius: 15px;
   height: 60px;
-  width: 160px;
+  width: 210px;
   cursor: pointer;
   transition: all 0.15s linear;
 }
@@ -74,6 +76,8 @@ body {
   font-size: 24px;
   padding: 15px;
   text-align: center;
+  text-decoration: none;
+  font-family: 'ABeeZee', sans-serif;
 }
 
 
@@ -124,6 +128,10 @@ body {
 }
 
 @media screen and (max-width: 480px) {
+  .homeBody {
+    height: 90vh;
+    padding-bottom: 0px;
+  }
   #waveline {
     padding-top: 145px;
   }
@@ -141,7 +149,7 @@ body {
   }
   .contactDiv {
     height: 40px;
-    width: 120px;
+    width: 150px;
     border-radius: 10px;
   }
   .contactMe {

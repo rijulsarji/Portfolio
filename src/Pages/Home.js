@@ -1,6 +1,7 @@
 import react from "react";
 import "../CSS/Pages CSS/Home.css";
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 
 import {
   FaCss3,
@@ -14,7 +15,7 @@ import Waveline from "../Components/Waveline";
 
 function App() {
   return (
-    <div className="homeBody">
+    <motion.div className="homeBody">
 
       <div className="mainContent">
         <div id="waveline">
@@ -32,7 +33,7 @@ function App() {
             <p className="htmlTags">/p</p>
             <p className="htmlTags">/body</p>
             <div className="contactDiv">
-              <p className="contactMe">Contact Me!</p>
+              <Link to="/about" className="contactMe">More about me</Link>
             </div>
           </motion.div>
 
@@ -46,7 +47,7 @@ function App() {
           </motion.div>
           </div>
       </div>
-    </div>
+    </motion.div>
   );
 }
 

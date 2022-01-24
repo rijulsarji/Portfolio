@@ -1,88 +1,43 @@
-
-@import "slick-carousel/slick/slick.css";
-@import "slick-carousel/slick/slick-theme.css";
-
 .projectBody {
-  width: 90vw;
-  margin: 1rem auto;
-  height: 100vh;
+  width: 100%;
+  padding-bottom: 50px;
+}
+
+.swiper-slide {
+  background-position: center;
+  background-size: cover;
+  width: 200px;
+  height: 200px;
 }
 .projectHeading {
   font-size: 42px;
   margin: 0px;
   padding: 40px;
   text-align: center;
-  color: #e6ba64;
+  color: #564E58;
   font-weight: 500;
+  font-family: 'Josefin Sans', sans-serif;
 }
-.projectContainer {
-  padding-top: 28px;
-}
-.slide span {
-  width: 20rem;
-  margin: 0 auto;
-}
-
-.slide {
-  transform: scale(0.6);
-  transition: transform 300ms;
+.projectCardHolder {
+  border-radius: 25px;
   padding-top: 25px;
-  opacity: 0.5;
+  padding-bottom: 50px;
 }
 
-.activeSlide {
-  transform: scale(1);
-  padding-bottom: 30px;
-  opacity: 1;
-}
-
-.arrow {
-  /* background-color: #fff; */
-  position: absolute;
-  cursor: pointer;
-  z-index: 10;
-}
-
-.arrow svg {
-  transition: color 300ms;
-}
-
-.arrow svg:hover {
-  color: #68edff;
-}
-
-.next {
-  right: 0%;
-  top: 50%;
-}
-
-.prev {
-  left: 0%;
-  top: 50%;
-}
-
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 720px) {
   .projectBody {
+    width: 100vw
+  }
+  .projectHeading {
+    font-size: 36px;
+  }
+  .projectContainer {
     width: 100vw;
   }
-  .arrow {
-    cursor: none;
-    display: none;
-  }
-  .slide {
-    z-index: -1;
-    transform: scale(0.6);
-    padding-top: 60px;
-    padding-left: 35px;
-    /* padding-right: -10px; */
-    margin-left: -90px;
-  }
-  .slide span {
-    z-index: -1;
-  }
-  .activeSlide {
-    transform: scale(1.5);
-    padding-top: 45px;
-    padding-bottom: 45px; 
+  .projectCardHolder {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
   }
 }
+

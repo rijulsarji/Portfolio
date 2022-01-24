@@ -5,7 +5,7 @@ function ExpCard(props) {
         <div className="expCard">
 
             <div className="expFront">
-                <img src={props.logo} />
+                <img src={props.logo} alt="props.profile"/>
                 <p>{props.title}</p>
             </div>
 

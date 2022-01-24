@@ -13,7 +13,8 @@
     font-size: 22px;
     text-align: center;
     margin-top: 10px;
-    text-decoration: underline;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 500;
 }
 
 .skillArrayContainer {
@@ -26,15 +27,14 @@
 }
 .skillArray {
     margin: 0px;
-    font-weight: 500;
     font-size: 17px;
     margin-left: 5px;
     width: fit-content;
+    font-family: 'Rubik', sans-serif;
 }
 
 @media screen and (max-width: 480px) {
     .skillCardContainer {
-        width: 75%;
-
+        width: 76%;
     }
 }

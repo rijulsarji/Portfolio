@@ -1,3 +1,4 @@
+import { FaGithub } from "react-icons/fa";
 import "../CSS/Components CSS/projectCard.css";
 
 function ProjectCard(props) {
@@ -9,11 +10,15 @@ function ProjectCard(props) {
         <div className="projectCardContainer">
             
             <div className="projFront" id={id}>
-                <img src={props.image} className="projImage" />
+                <img src={props.image} alt={props.link} className="projImage" />
             </div>
 
             <div className="projBack" id={backId}>
-
+                <p className="projDesc">{props.desc}</p>
+                <div className="projBackLink">
+                    <FaGithub />
+                    <a href={props.link} target="_blank" rel="noopener noreferrer">Github Repo</a>
+                </div>
             </div>
 
         </div>
