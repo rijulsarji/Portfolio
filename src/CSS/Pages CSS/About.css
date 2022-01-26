@@ -11,10 +11,9 @@ body {
 }
 .homeLink {
     position: absolute;
-    font-size: 40px;
-    text-shadow: 0px 0px 10px black;
-    top: 15px;
-    left: 15px;
+    font-size: 36px;
+    top: 30px;
+    left: 30px;
 }
 .aboutText {
     margin: 0;
@@ -28,6 +27,7 @@ body {
 #introText {
     margin-top: 20%;
     font-size: 64px;
+    text-shadow: 0px 3px 2px #ff3a6b;
 }
 .rijulImgContainer {
     display: flex;
@@ -77,11 +77,17 @@ body {
 .aboutDesc {
     width: 60%;
     color: white;
+    font-family: 'Rubik', sans-serif;
+    font-size: 24px;
+    line-height: 40px;
+    text-shadow: 0px 1px 1px #ff3a6b;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 720px) {
     .homeLink {
-        font-size: 24px;
+        font-size: 28px;
+        top: 15px;
+        left: 15px;
     }
     .aboutText {
         font-size: 16px;
@@ -89,6 +95,7 @@ body {
     #introText {
         top: 480px;
         font-size: 32px;
+        text-shadow: 0px 2px 1px #ff3a6b;
     }
     .rijulImgContainer {
         top: 500px;
@@ -116,6 +123,7 @@ body {
     }
     .aboutDesc {
         width: 80%;
+        font-size: 18px;
+        line-height: 32px;
     }
-
 }

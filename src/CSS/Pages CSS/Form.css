@@ -1,0 +1,135 @@
+.formBody {
+    height: 100vh;
+    width: 100vw;
+}
+.formIconContainer {
+    text-decoration: none;
+}
+.formIcon {
+    position: absolute;
+    left: 30px;
+    top: 30px;
+    font-size: 36px;
+    color: #864045;
+}
+.formLogo {
+    width: 75px;
+    position: absolute;
+    top: 30px;
+    right: calc(50% - 32.5px);
+}
+
+.formContainer {
+    width: 100vw;
+    padding-top: 100px;
+}
+.formContainer h1 {
+    width: 50%;
+    font-size: 44px;
+    font-family: 'Fugaz One', cursive;
+    color: #864045;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+.formInputContainer {
+    display: grid;
+    grid-template-columns: 30% 30%; 
+    justify-content: space-around; 
+    align-items: stretch;
+}
+.formInput {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    font-family: 'ABeeZee', sans-serif;
+    padding-top: 35px;
+}
+.formInput label {
+    font-size: 20px;
+    padding-bottom: 10px;
+    color: #864045;
+}
+.formInput input {
+    font-size: 16px;
+    padding: 10px;
+    font-family: 'ABeeZee', sans-serif;
+}
+.formInput input:focus {
+    outline-color: #864045;
+}
+
+.formInput select {
+    font-size: 16px;
+    padding: 10px;
+    width: 50%;
+    font-family: 'ABeeZee', sans-serif;
+}
+.formInput select:focus {
+    outline-color: #864045;
+}
+.typeDrop {
+    color: #864045;
+    font-family: 'ABeeZee', sans-serif;
+}
+
+.formInput textarea {
+    font-size: 16px;
+    padding: 10px;
+    font-family: 'ABeeZee', sans-serif;
+}
+.formInput textarea:focus {
+    outline-color: #864045;
+}
+
+.formButtons  {
+    display: flex;
+    width: 50%;
+    padding-top: 25px;
+    flex-direction: row;
+    justify-content: space-around;
+    bottom: 0;
+}
+.formButtons button {
+    background-color: #864045;
+    border: 2px solid #86595c;
+    color: white;
+    font-size: 14px;
+    font-family: 'ABeeZee', sans-serif;
+    padding: 5px;
+    cursor: pointer;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-radius: 10px;
+}
+
+@media screen and (max-width: 720px) {
+    .formIcon {
+        left: 15px;
+        top: 15px;
+        font-size: 28px;
+    }
+    .formLogo {
+        width: 60px;
+        right: calc(50% - 30px);
+    }
+
+    .formContainer h1 {
+        width: 80%;
+        font-size: 32px;
+    }
+
+    .formInputContainer {
+        grid-template-columns: 70%;
+        padding-bottom: 50px;
+    }
+
+    .formInput select {
+        width: 100%;
+    }
+
+    .formButtons {
+        width: 100%;
+    }
+}

@@ -1,43 +1,43 @@
 .projectBody {
-  width: 100%;
-  padding-bottom: 50px;
+	width: 100%;
+	padding-bottom: 50px;
 }
 
 .swiper-slide {
-  background-position: center;
-  background-size: cover;
-  width: 200px;
-  height: 200px;
+	background-position: center;
+	background-size: cover;
+	width: 200px;
+	height: 200px;
 }
 .projectHeading {
-  font-size: 42px;
-  margin: 0px;
-  padding: 40px;
-  text-align: center;
-  color: #564E58;
-  font-weight: 500;
-  font-family: 'Josefin Sans', sans-serif;
+	font-size: 42px;
+	margin: 0px;
+	padding: 40px;
+	text-align: center;
+	color: #564E58;
+	font-weight: 500;
+	font-family: 'Josefin Sans', sans-serif;
 }
 .projectCardHolder {
-  border-radius: 25px;
-  padding-top: 25px;
-  padding-bottom: 50px;
+	border-radius: 25px;
+	padding-top: 25px;
+	padding-bottom: 50px;
 }
 
 @media screen and (max-width: 720px) {
-  .projectBody {
-    width: 100vw
-  }
-  .projectHeading {
-    font-size: 36px;
-  }
-  .projectContainer {
-    width: 100vw;
-  }
-  .projectCardHolder {
-    width: 100vw;
-    display: flex;
-    justify-content: center;
-  }
+	.projectBody {
+		width: 100vw
+	}
+	.projectHeading {
+		font-size: 36px;
+	}
+	.projectContainer {
+		width: 100vw;
+	}
+	.projectCardHolder {
+		width: 100vw;
+		display: flex;
+		justify-content: center;
+	}
 }
 

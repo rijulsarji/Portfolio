@@ -1,42 +1,38 @@
-import "../CSS/Pages CSS/Skills.css"
-import SkillCard from "../Components/SkillCard"
+import "../CSS/Pages CSS/Skills.css";
+import SkillCard from "../Components/SkillCard";
 import { motion, useAnimation } from "framer-motion";
 import { useEffect } from "react";
 import { useInView } from "react-intersection-observer";
 
 function Skills() {
+  const { ref, inView } = useInView();
+  const animation = useAnimation();
 
-    const { ref, inView } = useInView();
-    const animation = useAnimation();
+  useEffect(() => {
+    if (inView) {
+      animation.start({
+        x: 0,
+        transition: {
+          duration: 1,
+          type: "spring",
+          bounce: 0.2,
+        },
+      });
+    }
 
-    useEffect(() => {
-      if (inView) {
-        animation.start({
-          x: 0,
-          transition: {
-            duration: 1,
-            type: "spring",
-            bounce: 0.2
-          },
-        });
-      }
+    if (!inView) {
+      animation.start({
+        x: "-100vw",
+      });
+    }
+  });
 
-      if (!inView) {
-        animation.start({
-          x: "-100vw",
-        });
-      }
-    });
+  return (
+    <div className="skillBody">
+      <p className="skillHeading">My Skills</p>
 
-    return (
-      <div className="skillBody">
-        <p className="skillHeading">My Skills</p>
-
-        <div ref={ref}>
-        <motion.div
-          className="skillContainer"
-          animate={animation}
-        >
+      <div ref={ref}>
+        <motion.div className="skillContainer" animate={animation}>
           <SkillCard
             title="Frontend Development"
             array={[
@@ -75,9 +71,9 @@ function Skills() {
             ]}
           />
         </motion.div>
-        </div>
       </div>
-    );
+    </div>
+  );
 }
 
 export default Skills;

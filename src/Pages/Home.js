@@ -1,4 +1,3 @@
-import react from "react";
 import "../CSS/Pages CSS/Home.css";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
@@ -16,13 +15,17 @@ import Waveline from "../Components/Waveline";
 function App() {
   return (
     <motion.div className="homeBody">
-
       <div className="mainContent">
         <div id="waveline">
-        <Waveline />
+          <Waveline />
         </div>
         <div className="mainView">
-          <motion.div className="homeLeftSide" initial={{opacity: 0}} animate={{opacity: 1}} transition={{duration: 1}}>
+          <motion.div
+            className="homeLeftSide"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 1 }}
+          >
             <p className="htmlTags">/html</p>
             <p className="htmlTags">body</p>
             <p className="htmlTags">h1</p>
@@ -33,19 +36,26 @@ function App() {
             <p className="htmlTags">/p</p>
             <p className="htmlTags">/body</p>
             <div className="contactDiv">
-              <Link to="/about" className="contactMe">More about me</Link>
+              <Link to="/about" className="contactMe">
+                More about me
+              </Link>
             </div>
           </motion.div>
 
-          <motion.div className="floatingDiv" initial={{opacity: 0}} animate={{opacity: 1}} transition={{duration: 1, delay: 1}}>
-						<FaHtml5 className="floatingIcons" id="html" />
-						<FaReact className="floatingIcons" id="react" />
-						<FaCss3 className="floatingIcons" id="css" />
-						<FaJs className="floatingIcons" id="js" />
-						<FaNodeJs className="floatingIcons" id="node" />
-						<FaFigma className="floatingIcons" id="figma" />
+          <motion.div
+            className="floatingDiv"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 1, delay: 1 }}
+          >
+            <FaHtml5 className="floatingIcons" id="html" />
+            <FaReact className="floatingIcons" id="react" />
+            <FaCss3 className="floatingIcons" id="css" />
+            <FaJs className="floatingIcons" id="js" />
+            <FaNodeJs className="floatingIcons" id="node" />
+            <FaFigma className="floatingIcons" id="figma" />
           </motion.div>
-          </div>
+        </div>
       </div>
     </motion.div>
   );

@@ -1,44 +1,40 @@
 import "../CSS/Pages CSS/Experience.css";
-import ExpCard from "../Components/ExperienceCard"
-import Aaruush from "../Images/Aaruush.jpg"
-import Alexa from "../Images/Alexa.png"
-import GFG from "../Images/GFG.jpg"
-import DS from "../Images/DS.jfif"
+import ExpCard from "../Components/ExperienceCard";
+import Aaruush from "../Images/Experience Logos/Aaruush.jpg";
+import Alexa from "../Images/Experience Logos/Alexa.png";
+import GFG from "../Images/Experience Logos/GFG.jpg";
+import DS from "../Images/Experience Logos/DS.jfif";
 import { motion, useAnimation } from "framer-motion";
-import {useInView} from "react-intersection-observer";
-import {useEffect} from "react";
+import { useInView } from "react-intersection-observer";
+import { useEffect } from "react";
 
 function Experience() {
-
-  const {ref, inView} = useInView();
+  const { ref, inView } = useInView();
   const animation = useAnimation();
 
-  useEffect (() => {
-    if(inView) {
-      animation.start ({
+  useEffect(() => {
+    if (inView) {
+      animation.start({
         opacity: 1,
         transition: {
-          duration: 1
-        }
-      })
+          duration: 1,
+        },
+      });
     }
 
-    if(!inView) {
-      animation.start ({
-        opacity: 0
-      })
+    if (!inView) {
+      animation.start({
+        opacity: 0,
+      });
     }
-  })
+  });
 
-    return (
-      <div className="expBody">
-        <p className="expHeading">Experience</p>
+  return (
+    <div className="expBody">
+      <p className="expHeading">Experience</p>
 
-        <div ref={ref}>
-        <motion.div
-          id="expContainer"
-          animate={animation}
-        >
+      <div ref={ref}>
+        <motion.div id="expContainer" animate={animation}>
           <ExpCard
             title="Design Scaling"
             profile="Web Developer Intern"
@@ -67,9 +63,9 @@ function Experience() {
             logo={Aaruush}
           />
         </motion.div>
-        </div>
       </div>
-    );
+    </div>
+  );
 }
 
 export default Experience;
