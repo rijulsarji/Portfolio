@@ -8,8 +8,9 @@ import {motion} from "framer-motion"
 import BottomCard from "./Components/BottomCard";
 
 function HomeRoute() {
+  
   return (
-    <motion.div style={{overflow: "hidden"}}  initial={{opacity: 0}} animate={{opacity: 1}} exit={{opacity: 0}}>
+    <motion.div style={{overflow: "hidden"}}  initial={{opacity: 0}} animate={{opacity: 1}} exit={{opacity: 0}} style={{scrollBehavior: "smooth"}}>
       {/* <Navbar /> */}
       <Home />
       <Experience />
