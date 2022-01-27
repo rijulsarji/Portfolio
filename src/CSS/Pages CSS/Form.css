@@ -1,7 +1,8 @@
 .formBody {
-    height: 100vh;
+    height: 100%;
     width: 100vw;
     scroll-behavior: smooth;
+    padding-bottom: 50px;
 }
 .formIconContainer {
     text-decoration: none;
@@ -106,6 +107,9 @@
 }
 
 @media screen and (max-width: 720px) {
+    .formBody {
+        padding-bottom: 25px;
+    }
     .formIcon {
         left: 15px;
         top: 15px;
