@@ -57,20 +57,14 @@ body {
 	margin-top: 20px;
 	display: flex;
 	align-items: center;
-	border: 3px solid #588ea0;
+	border: 3px solid rgb(88, 142, 160);
 	border-radius: 15px;
 	height: 60px;
 	width: 210px;
 	cursor: pointer;
 	/* transition: all 0.15s linear; */
 }
-.contactDiv:hover {
-	/* background-color: #427283;
-	color: #EDF8FC; */
-}
-.contactDiv:hover .contactMe {
-	/* color: #EDF8FC; */
-}
+
 .contactMe {
 	user-select: none;
 	font-size: 24px;
@@ -108,7 +102,7 @@ body {
 }
 #css {
 	top: 45%;
-	right: 5%;
+	right: 2%;
 	animation-duration: 19s;
 }
 #js {
@@ -123,8 +117,13 @@ body {
 }
 #figma {
 	top: 55%;
-	right: 25%;
+	right: 15%;
 	animation-duration: 20s;
+}
+#solidity {
+	top: 65%;
+	right: 30%;
+	animation-duration: 21s;
 }
 
 @media screen and (max-width: 720px) {

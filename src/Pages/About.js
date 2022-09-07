@@ -2,15 +2,7 @@ import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import "../CSS/Pages CSS/About.css";
 import { useEffect } from "react";
-import {
-  IoIosMail,
-  IoLogoDribbble,
-  IoLogoGithub,
-  IoLogoInstagram,
-  IoLogoLinkedin,
-  IoLogoTwitter,
-  IoMdArrowBack,
-} from "react-icons/io";
+import { IoMdArrowBack } from "react-icons/io";
 import rijulsarji from "../Images/About Me Logos/rijulsarji.png";
 import left from "../Images/About Me Logos/left.png";
 import right from "../Images/About Me Logos/right.png";
@@ -97,31 +89,36 @@ function About() {
         <a
           href="https://www.linkedin.com/in/rijul-sarji/"
           target="_blank"
+          rel="noreferrer"
           id="linkedin"
         >
           <SiLinkedin className="socialMedia" />
         </a>
         <a 
           href="https://github.com/rijulsarji" 
-          target="_blank" 
+          target="_blank"
+          rel="noreferrer" 
           id="github">
           <SiGithub className="socialMedia" />
         </a>
         <a 
           href="https://dribbble.com/rijulsarji" 
           target="_blank" 
+          rel="noreferrer"
           id="dribbble">
           <SiDribbble className="socialMedia" />
         </a>
         <a 
           href="https://twitter.com/rijul_sarji" 
           target="_blank" 
+          rel="noreferrer"
           id="twitter">
           <SiTwitter className="socialMedia" />
         </a>
         <a
           href="https://instagram.com/rijul_sarji"
           target="_blank"
+          rel="noreferrer"
           id="instagram"
         >
           <SiInstagram className="socialMedia" />
@@ -129,6 +126,7 @@ function About() {
         <a 
           href="mailto:rijulsarji@gmail.com" 
           target="_blank" 
+          rel="noreferrer"
           id="mail">
           <SiGmail className="socialMedia" />
         </a>

@@ -1,4 +1,3 @@
-import Navbar from "./Components/Navbar"
 import Home from "./Pages/Home"
 import Experience from "./Pages/Experience";
 import Skills from "./Pages/Skills";
@@ -10,8 +9,7 @@ import BottomCard from "./Components/BottomCard";
 function HomeRoute() {
   
   return (
-    <motion.div style={{overflow: "hidden"}}  initial={{opacity: 0}} animate={{opacity: 1}} exit={{opacity: 0}} style={{scrollBehavior: "smooth"}}>
-      {/* <Navbar /> */}
+    <motion.div style={{overflow: "hidden", scrollBehavior: "smooth"}}  initial={{opacity: 0}} animate={{opacity: 1}} exit={{opacity: 0}}>
       <Home />
       <Experience />
       <Skills />

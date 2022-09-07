@@ -9,7 +9,6 @@ import BMI from "../Images/Project Logos/BMI.png";
 import Game from "../Images/Project Logos/2dGame.png";
 import { motion } from "framer-motion";
 import { useEffect } from "react";
-import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
 import { useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import React from "react";

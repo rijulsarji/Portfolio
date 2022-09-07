@@ -11,6 +11,7 @@ import {
   FaFigma,
 } from "react-icons/fa";
 import Waveline from "../Components/Waveline";
+import { SiSolidity } from "react-icons/si";
 
 function App() {
   return (
@@ -32,7 +33,7 @@ function App() {
             <p className="heading">Hi!</p>
             <p className="heading">I'm Rijul</p>
             <p className="htmlTags">/h1</p>
-            <p id="desc">Front End Web & App Developer</p>
+            <p id="desc">Full Stack Web & App Developer</p>
             <p className="htmlTags">/p</p>
             <p className="htmlTags">/body</p>
             <div className="contactDiv">
@@ -54,6 +55,7 @@ function App() {
             <FaJs className="floatingIcons" id="js" />
             <FaNodeJs className="floatingIcons" id="node" />
             <FaFigma className="floatingIcons" id="figma" />
+            <SiSolidity className="floatingIcons" id="solidity" />
           </motion.div>
         </div>
       </div>

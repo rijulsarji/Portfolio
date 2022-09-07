@@ -8,7 +8,7 @@ import {
   FaLinkedin,
   FaTrophy,
 } from "react-icons/fa";
-import { IoIosClose, IoIosMenu } from "react-icons/io";
+import { IoIosClose } from "react-icons/io";
 import { FiMenu } from "react-icons/fi";
 
 function Navbar() {
