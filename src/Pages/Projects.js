@@ -1,5 +1,6 @@
 import ProjectCard from "../Components/ProjectCard";
 import "../CSS/Pages CSS/Projects.css";
+import Udaan from "../Images/Project Logos/Udaan.png";
 import Bookzilla from "../Images/Project Logos/Bookzilla.png";
 import ToDoList from "../Images/Project Logos/ToDoList.png";
 import MoodyAI from "../Images/Project Logos/MoodyAI.png";
@@ -41,6 +42,14 @@ function Projects() {
   });
 
   const projectArray = [
+    <ProjectCard
+      title="Udaan"
+      image={Udaan}
+      id="card0"
+      desc="Udaan is an all in one platform that helps you explore all sorts of opportunities for the specially abled like jobs, scholarships, NGOs, etc."
+      link="https://www.github.com/rijulsarji/Udaan-Mozohack"
+    />,
+
     <ProjectCard
       title="Bookzilla"
       image={Bookzilla}
