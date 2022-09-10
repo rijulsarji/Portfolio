@@ -109,21 +109,24 @@ body {
 	top: 50%;
 	right: 40%;
 	animation-duration: 21s;
+	animation-direction: reverse;
 }
 #node {
 	top: 10%;
 	right: 35%;
-	animation-duration: 22s;
+	animation-duration: 19s;
+	animation-direction: reverse;
 }
 #figma {
 	top: 55%;
 	right: 15%;
 	animation-duration: 20s;
+	animation-direction: reverse;
 }
 #solidity {
 	top: 65%;
 	right: 30%;
-	animation-duration: 21s;
+	animation-duration: 16s;
 }
 
 @media screen and (max-width: 720px) {
@@ -160,7 +163,7 @@ body {
 	}
 	#js {
 		top: 83%;
-		right: 35%;
+		right: 7%;
 	}
 	#figma {
 		top: 65%;
@@ -174,5 +177,9 @@ body {
 	}
 	#css {
 		top: 25%;
+	}
+	#solidity {
+		top: 75%;
+		right: 40%;
 	}
 	}
