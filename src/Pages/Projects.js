@@ -8,7 +8,7 @@ import Amanda from "../Images/Project Logos/Amanda.png";
 import BMI from "../Images/Project Logos/BMI.png";
 import Game from "../Images/Project Logos/2dGame.png";
 import { motion } from "framer-motion";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import { useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import React from "react";
@@ -21,6 +21,18 @@ import "swiper/css/pagination";
 function Projects() {
   const { ref, inView } = useInView();
   const animation = useAnimation();
+
+  const [data, setData] = useState();
+  const [load, setLoad] = useState(true);
+
+  useEffect(() => {
+    fetch("")
+      .then(response => response.json())
+      .then(data => {
+        setData(data)
+        setLoad(false)
+      })
+  }, [])
 
   useEffect(() => {
     if (inView) {
