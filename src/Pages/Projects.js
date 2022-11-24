@@ -26,12 +26,12 @@ function Projects() {
   const [load, setLoad] = useState(true);
 
   useEffect(() => {
-    fetch("")
-      .then(response => response.json())
-      .then(data => {
-        setData(data)
-        setLoad(false)
-      })
+    fetch("https://portfolio-backend-f5vh.onrender.com/projects")
+      .then((response) => response.json())
+      .then((data) => {
+        setData(data);
+        setLoad(false);
+      });
   }, [])
 
   useEffect(() => {

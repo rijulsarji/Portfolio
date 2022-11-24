@@ -36,11 +36,9 @@ function App() {
             <p id="desc">Full Stack Web & App Developer</p>
             <p className="htmlTags">/p</p>
             <p className="htmlTags">/body</p>
-            <div className="contactDiv">
               <Link to="/about" className="contactMe">
                 More about me
               </Link>
-            </div>
           </motion.div>
 
           <motion.div

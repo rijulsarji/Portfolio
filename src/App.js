@@ -39,7 +39,7 @@ function useEventListener(eventName, handler, element = document) {
  * @author Stephen Scaff
  */
 function AnimatedCursor({
-  color = "0, 153, 153",
+  color = "250, 50, 203",
   outerAlpha = 0.4,
   innerSize = 10,
   outerSize = 10,
@@ -212,7 +212,7 @@ function App() {
 
   return (
     <div>
-      <AnimatedCursor />
+      {/* <AnimatedCursor /> */}
       <AnimatePresence exitBeforeEnter>
         <Routes location={location} key={location.pathname}>
           <Route path="/" element={<HomeRoute />} />
