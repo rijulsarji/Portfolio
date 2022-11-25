@@ -1,15 +1,8 @@
-body {
-	margin: 0px;
-	padding: 0px;
-	box-sizing: border-box;
-}
 .homeBody {
 	height: 768px;
 	max-width: 100vw;
 	background-color: #EDF8FC;
 	user-select: none;
-	/* padding-bottom: 25%;   */
-	/* padding-left: 70px; */
 }
 
 /* Main View according to Figma */
@@ -35,6 +28,11 @@ body {
 	top: 0px;
 	height: 100vh;
 }
+.homeLeftSide p {
+	margin-top: 20px;
+	margin-bottom: 20px;
+
+}
 .htmlTags {
 	color: #427283;
 	font-family: 'Damion', cursive;
@@ -47,9 +45,20 @@ body {
 }
 .heading {
 	font-size: 72px;
+	margin-top: 25px;
 	font-family: 'Fugaz One', cursive;
 }
+#heading1 {
+	margin-top: 75px;
+	margin-bottom: 50px;
+}
+#heading2 {
+	margin-top: 75px;
+	margin-bottom: 50px;
+}
 #desc {
+	margin-top: 30px;
+	margin-bottom: 30px;
 	font-size: 36px;
 	font-family: 'Alata', sans-serif;
 }

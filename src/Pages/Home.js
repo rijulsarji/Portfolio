@@ -30,15 +30,19 @@ function App() {
             <p className="htmlTags">/html</p>
             <p className="htmlTags">body</p>
             <p className="htmlTags">h1</p>
-            <p className="heading">Hi!</p>
-            <p className="heading">I'm Rijul</p>
+            <p className="heading" id="heading1">
+              Hi!
+            </p>
+            <p className="heading" id="heading2">
+              I'm Rijul
+            </p>
             <p className="htmlTags">/h1</p>
             <p id="desc">Full Stack Web & App Developer</p>
             <p className="htmlTags">/p</p>
             <p className="htmlTags">/body</p>
-              <Link to="/about" className="contactMe">
-                More about me
-              </Link>
+            <Link to="/about" className="contactMe">
+              More about me
+            </Link>
           </motion.div>
 
           <motion.div

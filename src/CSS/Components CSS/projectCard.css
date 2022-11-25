@@ -1,4 +1,4 @@
-.projectCardContainer {
+.pcc-body {
     position: relative;
     height: 250px;
     width: 500px;
@@ -6,68 +6,29 @@
     user-select: none;
 }
 
-.projFront {
+.pcc-front {
     width: 100%;
     height: 100%;
     position: absolute;
     transition: opacity 0.15s linear;
     z-index: 3;
     border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
-.projectCardContainer:hover > .projFront {
+.pcc-front img {
+    width: 250px;
+    height: 200px;
+}
+.pcc-body:hover > .pcc-front {
     opacity: 0;
     z-index: -1;
 }
 
-.projImage {
-    width: 100%;
-    height: 100%;
-    border-radius: 25px;
-}
-#card0 {
-    box-shadow: 0px 0px 10px #ffd000;
-}
-#card1 {
-    box-shadow: 0px 0px 10px #ffaa00;
-}
-#card2 {
-    box-shadow: 0px 0px 10px #ff0051;
-}
-#card3 {
-    box-shadow: 0px 0px 10px #00ffc3;
-}
-#card4 {
-    box-shadow: 0px 0px 10px #00ffea;
-}
-#card5 {
-    box-shadow: 0px 0px 10px #008cff;
-}
-#card6 {
-    box-shadow: 0px 0px 10px #ff7700;
-}
-#backcard0 {
-    background-color: #FFD832;
-}
-#backcard1 {
-    background-color: #D5BB85;
-}
-#backcard2 {
-    background-color: #FFE1EB;
-}
-#backcard3 {
-    background-color: #A7F5E3;
-}
-#backcard4 {
-    background-color: #D3FFFB;
-}
-#backcard5 {
-    background-color: #C1E3FF;
-}
-#backcard6 {
-    background-color: #997C64;
-}
 
-.projBack {
+.pcc-back {
     width: 100%;
     height: 100%;
     position: absolute;
@@ -76,63 +37,68 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
     z-index: 1;
     font-family: 'Rubik', sans-serif;
 }
-.projDesc {
+.pcc-back p {
+    padding-left: 20px;
+    padding-right: 20px;
     font-size: 18px;
-    width: 80%;
 }
-.projBackLink {
+.pcc-back p:first-child {
+    margin-top: 30px;
+    font-weight: 500;
+}
+.pcc-back-link {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
     gap: 15px;
     border: 3px solid black;
-    padding: 0px;
     height: 10%;
-    padding: 10px;
     border-radius: 10px;
     font-size: 16px;
     z-index: 2;
     cursor: pointer;
     transition: all 0.15s linear;
+    padding: 20px;
+    margin-bottom: 30px;
 }
 
-.projBackLink a {
+.pcc-back-link a {
     text-decoration: none;
     color: #000;
     transition: color 0.15 linear;
 }
-.projBackLink:hover {
+.pcc-back-link:hover {
     background-color: black;
     color: white;
 }
-.projBackLink:hover > a {
+.pcc-back-link:hover > a {
     color: white;
 }
 
 @media screen and (max-width: 720px) {
-    .projectCardContainer {
+    .pcc-body {
         min-width: 230px;
         height: 115px;
     }
-    .projFront {
+    .pcc-front {
         border-radius: 8px;
     }
-    .projImage {
+    .pcc-front img {
         border-radius: 8px;
     }
-    .projBack {
+    .pcc-back {
         border-radius: 8px;
     }
-    .projDesc {
+    .pcc-back p {
         font-size: 12px;
         width: 90%;
     }
-    .projBackLink {
+    .pcc-back-link {
         font-size: 11px;
         padding: 7px;
         border: 1.5px solid black;
