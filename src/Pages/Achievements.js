@@ -33,7 +33,7 @@ function Achievements() {
         <motion.div animate={animation} className="achiContainer">
           <AchiCard
             title="Hackathons"
-            desc="Bagged 3rd prize in Mozohack Hackathon, 2nd prize in TechCrawler Hackathon and participated in four other hackathons as well."
+            desc="Bagged 3rd prize in Mozohack Hackathon, 2nd prize in TechCrawler Hackathon and participated in six other hackathons as well."
           />
 
           <AchiCard

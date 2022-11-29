@@ -34,29 +34,28 @@ function Skills() {
       <div ref={ref}>
         <motion.div className="skillContainer" animate={animation}>
           <SkillCard
-            title="Frontend Development"
-            array={[
-              "ReactJS",
-              "NextJS",
-              "SASS",
-              "Tailwind CSS",
-              "FramerMotion",
-              "JavaScript",
-              "CSS",
-              "HTML",
-            ]}
-          />
-          <SkillCard
-            title="Backend Development"
-            array={["NodeJS", "ExpressJS", "PHP", "MongoDB", "SQL"]}
-          />
-          <SkillCard
             title="App Development"
             array={[
               "React Native",
               "Flutter",
               "Android Studio",
               "Software Development Kits (SDKs)",
+            ]}
+          />
+          <SkillCard
+            title="Full Stack Development"
+            array={[
+              "ReactJS",
+              "NextJS",
+              "Tailwind CSS",
+              "FramerMotion",
+              "JavaScript",
+              "NodeJS",
+              "ExpressJS",
+              "MongoDB",
+              "SQL",
+              "AWS",
+              "Sanity",
             ]}
           />
           <SkillCard

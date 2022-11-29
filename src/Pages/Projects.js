@@ -61,7 +61,7 @@ function Projects() {
       <p className="projectHeading">My Pieces of Work</p>
 
       {load ? (
-        <h2>Loading...</h2>
+        <h1>Loading...</h1>
       ) : (
         <div ref={ref}>
           <Swiper
