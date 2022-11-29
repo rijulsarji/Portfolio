@@ -89,6 +89,8 @@
         border-radius: 8px;
     }
     .pcc-front img {
+        width: 140px;
+        height: 108px;
         border-radius: 8px;
     }
     .pcc-back {
