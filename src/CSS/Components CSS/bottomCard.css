@@ -68,10 +68,12 @@
 	}
 	.collabContainer h1 {
 		font-size: 24px;
+		margin-bottom: 15px;
 	}
 	.collabContainer p {
 		font-size: 16px;
 		width: 80%;
+		margin-bottom: 15px;
 	}
 	.letsGo {
 		margin-top: 10px;
