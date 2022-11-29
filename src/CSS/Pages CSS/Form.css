@@ -125,6 +125,13 @@
         font-size: 32px;
     }
 
+    .formInput label {
+        margin-bottom: 10px;
+    }
+    .formInput textarea, .formInput select {
+        margin-top: 10px;
+    }
+
     .formInputContainer {
         grid-template-columns: 70%;
         padding-bottom: 50px;
