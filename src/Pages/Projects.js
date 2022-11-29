@@ -103,6 +103,7 @@ function Projects() {
                     image={item.image}
                     description={item.description}
                     color={item.color}
+                    textcolor={item.textcolor}
                   />
                 </SwiperSlide>
               </motion.div>
