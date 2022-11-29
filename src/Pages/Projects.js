@@ -17,6 +17,7 @@ import SwiperCore, { EffectCoverflow, Mousewheel, Pagination } from "swiper";
 import "swiper/css";
 import "swiper/css/effect-coverflow";
 import "swiper/css/pagination";
+import Loader from "../utils/Loader";
 
 function Projects() {
   const { ref, inView } = useInView();
@@ -61,7 +62,7 @@ function Projects() {
       <p className="projectHeading">My Pieces of Work</p>
 
       {load ? (
-        <h1>Loading...</h1>
+        <Loader />
       ) : (
         <div ref={ref}>
           <Swiper
