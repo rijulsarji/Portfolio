@@ -89,24 +89,30 @@
         border-radius: 8px;
     }
     .pcc-front img {
-        width: 150px;
-        height: 120px;
+        width: 120px;
+        height: 96px;
         border-radius: 8px;
     }
     .pcc-back {
         border-radius: 8px;
     }
     .pcc-back p {
-        font-size: 12px;
+        font-size: 11px;
         width: 90%;
+        padding-left: 2px;
+        padding-right: 2px;
+    }
+    .pcc-back p:first-child {
+        margin-top: 10px;
+        font-weight: 500;
     }
     .pcc-back-link {
         font-size: 11px;
         padding: 7px;
         border: 1.5px solid black;
         border-radius: 5px;
-        margin-top: -10px;
         height: 7%;
         gap: 10px;
+        margin-bottom: 10px;
     }
 }

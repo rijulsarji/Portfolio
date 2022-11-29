@@ -32,7 +32,7 @@ function Projects() {
       .then((data) => {
         setData(data);
         setLoad(false);
-        console.log(data);
+        console.log(data)
       });
   }, [])
 
@@ -91,10 +91,14 @@ function Projects() {
             }}
             className="projectContainer"
           >
-            {data.map((item) => (
-              <motion.div animate={animation}>
+            {data.map((item, index) => (
+              <motion.div
+                animate={animation}
+                key={Math.floor(Math.random() * 10000)}
+              >
                 <SwiperSlide className="projectCardHolder">
                   <ProjectCard
+                    key={Math.floor(Math.random() * 10000)}
                     name={item.name}
                     image={item.image}
                     description={item.description}

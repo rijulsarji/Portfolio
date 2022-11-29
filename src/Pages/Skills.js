@@ -41,6 +41,7 @@ function Skills() {
               "Android Studio",
               "Software Development Kits (SDKs)",
             ]}
+            key={1}
           />
           <SkillCard
             title="Full Stack Development"
@@ -57,6 +58,7 @@ function Skills() {
               "AWS",
               "Sanity",
             ]}
+            key={2}
           />
           <SkillCard
             title="Designing"
@@ -68,6 +70,7 @@ function Skills() {
               "Responsive Design",
               "WordPress",
             ]}
+            key={3}
           />
         </motion.div>
       </div>

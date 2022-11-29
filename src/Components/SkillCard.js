@@ -9,6 +9,7 @@ function SkillCard(props) {
       <div className="skillArrayContainer">
         {props.array.map((item) => (
           <motion.p
+            key={Math.floor(Math.random() * 10000)}
             className="skillArray"
             whileHover={{ fontSize: "18px" }}
             transition={{ duration: 0.1 }}
