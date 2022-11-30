@@ -20,7 +20,7 @@ function ProjectCard(props) {
         <div className="pcc-back-link">
           <FaGithub />
           <a
-            href={props.link}
+            href={props.github}
             target="_blank"
             rel="noopener noreferrer"
             style={{ color: `${props.textcolor}` }}

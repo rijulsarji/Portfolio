@@ -1,12 +1,5 @@
 import ProjectCard from "../Components/ProjectCard";
 import "../CSS/Pages CSS/Projects.css";
-import Udaan from "../Images/Project Logos/Udaan.png";
-import Bookzilla from "../Images/Project Logos/Bookzilla.png";
-import ToDoList from "../Images/Project Logos/ToDoList.png";
-import MoodyAI from "../Images/Project Logos/MoodyAI.png";
-import Amanda from "../Images/Project Logos/Amanda.png";
-import BMI from "../Images/Project Logos/BMI.png";
-import Game from "../Images/Project Logos/2dGame.png";
 import { motion } from "framer-motion";
 import { useEffect, useState } from "react";
 import { useAnimation } from "framer-motion";
@@ -104,6 +97,7 @@ function Projects() {
                     description={item.description}
                     color={item.color}
                     textcolor={item.textcolor}
+                    github={item.github}
                   />
                 </SwiperSlide>
               </motion.div>
